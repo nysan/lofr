@@ -1,0 +1,10 @@
+[Unit]
+Description=Low Overhead Flight Recorder(LOAFR) daemon
+
+[Service]
+Type=simple
+ExecStart=@CMAKE_INSTALL_PREFIX@/@CMAKE_INSTALL_BINDIR@/loafrd.sh
+Group=loafr
+
+[Install]
+WantedBy=multi-user.target
